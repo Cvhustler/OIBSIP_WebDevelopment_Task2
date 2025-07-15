@@ -27,4 +27,4 @@ KIET Group of Institutions, AKTU
 ## 📸 Preview:
 Images and sections styled to match a modern anime/dark theme with subtle animations.
 
-## 📂 Folder Structure:
+
