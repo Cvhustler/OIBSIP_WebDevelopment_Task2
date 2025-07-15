@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chirag Varshney | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background-color: #10141e;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-image: url('images/header-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px 80px;
+      text-align: center;
+      position: relative;
+      animation: zoomHeader 20s ease-in-out infinite alternate;
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px 80px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      font-size: 1.3rem;
+      color: #e0e0e0;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 3.8rem;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      color: #ccc;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00ffe0;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00ffe0;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .about {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .skills, .projects, .education, .certifications, .experience {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill, .project, .edu, .cert, .exp {
+      background: #1a1f2f;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .skill:hover, .project:hover, .edu:hover, .cert:hover, .exp:hover {
+      transform: translateY(-5px);
+      background: #212638;
+    }
+
+    .project img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: #151526;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      background: #0c0c15;
+      color: #aaa;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .skills, .projects, .education, .certifications, .experience {
+        flex-direction: column;
+      }
+    }
+  @keyframes zoomHeader {
+      0% {
+        background-size: 100%;
+      }
+      100% {
+        background-size: 110%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>Chirag Varshney</h1>
+    <p>Web Developer | ML Enthusiast | Full Stack Learner</p>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2>About Me</h2>
+    <p class="about">
+      I'm Chirag, currently pursuing B.Tech in Electrical and Electronics Engineering at KIET Group of Institutions, AKTU. I'm passionate about frontend and full-stack development, machine learning, and creating useful digital products. I love building aesthetically pleasing UI and solving real-world problems through code.
+    </p>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Java</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">PostgreSQL</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">MATLAB & Simulink</div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="images/project1.jpg" alt="Churn Prediction" />
+        <h3>Customer Churn Prediction</h3>
+        <p>Built ML models (Logistic, Decision Trees, RF) to predict customer churn using real datasets. Improved strategy via AUC, F1 metrics & data visualization.</p>
+      </div>
+      <div class="project">
+        <img src="images/project2.jpg" alt="Stock Simulation" />
+        <h3>Stock Market Simulation</h3>
+        <p>Developed full-stack app with Node.js, MongoDB, React. Features live stock APIs, virtual trading, AI prediction & portfolio analytics.</p>
+      </div>
+      <div class="project">
+        <img src="images/project3.jpg" alt="Landing Page" />
+        <h3>AniStream Landing Page</h3>
+        <p>Clean responsive landing page for an anime app with custom sections and CTA.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Experience</h2>
+    <div class="experience">
+      <div class="exp">
+        <h3>Systems Development Intern</h3>
+        <p>TeificTechnology, Ghaziabad – July 2023 to Aug 2023</p>
+        <p>Worked on microcontroller programming, signal processing, and real-world hardware-software systems with embedded development and web integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Education</h2>
+    <div class="education">
+      <div class="edu">
+        <h3>KIET Group of Institutions, AKTU</h3>
+        <p>B.Tech in Electrical and Electronics Engineering (Sept 2022 – Present)</p>
+      </div>
+      <div class="edu">
+        <h3>Assisi Convent School, Etah</h3>
+        <p>CBSE | 12th – 83% | 10th – 93.6%</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <div class="cert">
+        <h3>Accenture Data Analytics & Visualization</h3>
+        <p>Completed in December 2023</p>
+      </div>
+      <div class="cert">
+        <h3>Google – Introduction to Generative AI</h3>
+        <p>Completed in December 2023</p>
+      </div>
+      <div class="cert">
+        <h3>Neural Networks and Fuzzy Systems – AKTU</h3>
+        <p>Part of B.Tech curriculum</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Email: <a href="mailto:cvvarshney1234@gmail.com" style="color:#00ffe0;">cvvarshney1234@gmail.com</a></p>
+      <p>GitHub: <a href="#" style="color:#00ffe0;">github.com/chirag</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/chirag-varshney-5981a4265" style="color:#00ffe0;">linkedin.com/in/chirag-varshney-5981a4265</a></p>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Resume</h2>
+    <div class="contact" style="text-align: center;">
+      <p>You can download my resume here:</p>
+      <a href="chirag_resume.pdf.pdf" download style="display: inline-block; margin-top: 10px; padding: 10px 20px; background: #00ffe0; color: #10141e; border-radius: 8px; text-decoration: none; font-weight: bold;">Download Resume (PDF)</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Chirag Varshney. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
